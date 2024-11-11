@@ -1,0 +1,49 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#1a1b1e"/>
+  
+  <!-- Components Title -->
+  <text x="400" y="40" font-size="24" text-anchor="middle" fill="#fff">AI Farm Components</text>
+
+  <!-- Server Components -->
+  <g transform="translate(50, 80)">
+    <rect width="300" height="350" rx="15" fill="#2d2e32"/>
+    <text x="150" y="30" font-size="18" text-anchor="middle" fill="#fff">Server Components</text>
+    
+    <rect x="30" y="50" width="240" height="60" rx="10" fill="#2196F3"/>
+    <text x="150" y="85" font-size="16" text-anchor="middle" fill="#fff">Main Server Controller</text>
+    
+    <rect x="30" y="130" width="240" height="60" rx="10" fill="#4CAF50"/>
+    <text x="150" y="165" font-size="16" text-anchor="middle" fill="#fff">Model Server</text>
+    
+    <rect x="30" y="210" width="240" height="60" rx="10" fill="#FFC107"/>
+    <text x="150" y="245" font-size="16" text-anchor="middle" fill="#fff">Task Coordinator</text>
+    
+    <rect x="30" y="290" width="240" height="40" rx="10" fill="#607D8B"/>
+    <text x="150" y="315" font-size="14" text-anchor="middle" fill="#fff">Database Layer</text>
+  </g>
+
+  <!-- Client Components -->
+  <g transform="translate(450, 80)">
+    <rect width="300" height="350" rx="15" fill="#2d2e32"/>
+    <text x="150" y="30" font-size="18" text-anchor="middle" fill="#fff">Client Components</text>
+    
+    <rect x="30" y="50" width="240" height="60" rx="10" fill="#E91E63"/>
+    <text x="150" y="85" font-size="16" text-anchor="middle" fill="#fff">Resource Manager</text>
+    
+    <rect x="30" y="130" width="240" height="60" rx="10" fill="#9C27B0"/>
+    <text x="150" y="165" font-size="16" text-anchor="middle" fill="#fff">Training Manager</text>
+    
+    <rect x="30" y="210" width="240" height="60" rx="10" fill="#FF5722"/>
+    <text x="150" y="245" font-size="16" text-anchor="middle" fill="#fff">Model Cache</text>
+    
+    <rect x="30" y="290" width="240" height="40" rx="10" fill="#607D8B"/>
+    <text x="150" y="315" font-size="14" text-anchor="middle" fill="#fff">Monitoring System</text>
+  </g>
+
+  <!-- Connecting Lines -->
+  <g stroke="#fff" stroke-width="2" stroke-dasharray="5,5">
+    <path d="M 350,180 L 450,180"/>
+    <path d="M 350,240 L 450,240"/>
+  </g>
+</svg>

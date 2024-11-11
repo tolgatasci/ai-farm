@@ -1,0 +1,89 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">AI Farm Architecture</text>
+
+  <!-- Server Layer -->
+  <g transform="translate(50, 100)">
+    <rect width="700" height="150" rx="10" fill="#3498db" opacity="0.1" stroke="#3498db" stroke-width="2"/>
+    <text x="20" y="30" font-size="18" fill="#2c3e50">Server Layer</text>
+    
+    <!-- Main Server -->
+    <g transform="translate(50, 50)">
+      <rect width="150" height="70" rx="5" fill="#3498db"/>
+      <text x="75" y="35" font-size="14" fill="white" text-anchor="middle">Main Server</text>
+      <text x="75" y="55" font-size="12" fill="white" text-anchor="middle">WebSocket + HTTP</text>
+    </g>
+    
+    <!-- Model Server -->
+    <g transform="translate(275, 50)">
+      <rect width="150" height="70" rx="5" fill="#3498db"/>
+      <text x="75" y="45" font-size="14" fill="white" text-anchor="middle">Model Server</text>
+    </g>
+    
+    <!-- Database -->
+    <g transform="translate(500, 50)">
+      <rect width="150" height="70" rx="5" fill="#3498db"/>
+      <text x="75" y="45" font-size="14" fill="white" text-anchor="middle">Database</text>
+    </g>
+  </g>
+
+  <!-- Client Layer -->
+  <g transform="translate(50, 300)">
+    <rect width="700" height="150" rx="10" fill="#2ecc71" opacity="0.1" stroke="#2ecc71" stroke-width="2"/>
+    <text x="20" y="30" font-size="18" fill="#2c3e50">Client Layer</text>
+    
+    <!-- Resource Manager -->
+    <g transform="translate(50, 50)">
+      <rect width="150" height="70" rx="5" fill="#2ecc71"/>
+      <text x="75" y="45" font-size="14" fill="white" text-anchor="middle">Resource Manager</text>
+    </g>
+    
+    <!-- Training Manager -->
+    <g transform="translate(275, 50)">
+      <rect width="150" height="70" rx="5" fill="#2ecc71"/>
+      <text x="75" y="45" font-size="14" fill="white" text-anchor="middle">Training Manager</text>
+    </g>
+    
+    <!-- Model Cache -->
+    <g transform="translate(500, 50)">
+      <rect width="150" height="70" rx="5" fill="#2ecc71"/>
+      <text x="75" y="45" font-size="14" fill="white" text-anchor="middle">Model Cache</text>
+    </g>
+  </g>
+
+  <!-- Arrows -->
+  <g stroke="#34495e" stroke-width="2" fill="none">
+    <!-- Server to Client -->
+    <path d="M 125,220 L 125,350" marker-end="url(#arrowhead)"/>
+    <path d="M 350,220 L 350,350" marker-end="url(#arrowhead)"/>
+    <path d="M 575,220 L 575,350" marker-end="url(#arrowhead)"/>
+    
+    <!-- Horizontal Connections -->
+    <path d="M 200,175 L 275,175" marker-end="url(#arrowhead)"/>
+    <path d="M 425,175 L 500,175" marker-end="url(#arrowhead)"/>
+    <path d="M 200,375 L 275,375" marker-end="url(#arrowhead)"/>
+    <path d="M 425,375 L 500,375" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+
+  <!-- Status Indicators -->
+  <g transform="translate(50, 500)">
+    <circle cx="15" cy="15" r="8" fill="#27ae60"/>
+    <text x="35" y="20" font-size="14" fill="#2c3e50">Active</text>
+    
+    <circle cx="115" cy="15" r="8" fill="#e74c3c"/>
+    <text x="135" y="20" font-size="14" fill="#2c3e50">Inactive</text>
+    
+    <circle cx="215" cy="15" r="8" fill="#f1c40f"/>
+    <text x="235" y="20" font-size="14" fill="#2c3e50">Processing</text>
+  </g>
+</svg>

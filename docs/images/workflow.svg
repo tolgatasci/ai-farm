@@ -1,0 +1,75 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#1a1b1e"/>
+  
+  <!-- Workflow Title -->
+  <text x="400" y="40" font-size="24" text-anchor="middle" fill="#fff">AI Farm Workflow</text>
+
+  <!-- Workflow Steps -->
+  <g transform="translate(50, 80)">
+    <!-- Step 1 -->
+    <circle cx="50" cy="50" r="30" fill="#4CAF50"/>
+    <text x="50" y="55" font-size="20" text-anchor="middle" fill="#fff">1</text>
+    <text x="50" y="100" font-size="14" text-anchor="middle" fill="#fff">Task Creation</text>
+
+    <!-- Arrow 1 -->
+    <path d="M 90,50 L 160,50" stroke="#fff" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 2 -->
+    <circle cx="200" cy="50" r="30" fill="#2196F3"/>
+    <text x="200" y="55" font-size="20" text-anchor="middle" fill="#fff">2</text>
+    <text x="200" y="100" font-size="14" text-anchor="middle" fill="#fff">Distribution</text>
+
+    <!-- Arrow 2 -->
+    <path d="M 240,50 L 310,50" stroke="#fff" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 3 -->
+    <circle cx="350" cy="50" r="30" fill="#FFC107"/>
+    <text x="350" y="55" font-size="20" text-anchor="middle" fill="#fff">3</text>
+    <text x="350" y="100" font-size="14" text-anchor="middle" fill="#fff">Training</text>
+
+    <!-- Arrow 3 -->
+    <path d="M 390,50 L 460,50" stroke="#fff" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 4 -->
+    <circle cx="500" cy="50" r="30" fill="#9C27B0"/>
+    <text x="500" y="55" font-size="20" text-anchor="middle" fill="#fff">4</text>
+    <text x="500" y="100" font-size="14" text-anchor="middle" fill="#fff">Aggregation</text>
+
+    <!-- Arrow 4 -->
+    <path d="M 540,50 L 610,50" stroke="#fff" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Step 5 -->
+    <circle cx="650" cy="50" r="30" fill="#E91E63"/>
+    <text x="650" y="55" font-size="20" text-anchor="middle" fill="#fff">5</text>
+    <text x="650" y="100" font-size="14" text-anchor="middle" fill="#fff">Results</text>
+  </g>
+
+  <!-- Details Section -->
+  <g transform="translate(50, 150)">
+    <rect width="700" height="200" rx="10" fill="#2d2e32"/>
+    <text x="20" y="30" font-size="16" fill="#fff">Process Details:</text>
+    
+    <text x="40" y="60" font-size="14" fill="#4CAF50">1. Task Creation:</text>
+    <text x="40" y="80" font-size="12" fill="#fff">• Define model configuration</text>
+    <text x="40" y="100" font-size="12" fill="#fff">• Set resource requirements</text>
+    
+    <text x="220" y="60" font-size="14" fill="#2196F3">2. Distribution:</text>
+    <text x="220" y="80" font-size="12" fill="#fff">• Shard allocation</text>
+    <text x="220" y="100" font-size="12" fill="#fff">• Client assignment</text>
+    
+    <text x="400" y="60" font-size="14" fill="#FFC107">3. Training:</text>
+    <text x="400" y="80" font-size="12" fill="#fff">• Parallel processing</text>
+    <text x="400" y="100" font-size="12" fill="#fff">• Progress monitoring</text>
+    
+    <text x="580" y="60" font-size="14" fill="#9C27B0">4/5. Final Steps:</text>
+    <text x="580" y="80" font-size="12" fill="#fff">• Model aggregation</text>
+    <text x="580" y="100" font-size="12" fill="#fff">• Result validation</text>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#fff"/>
+    </marker>
+  </defs>
+</svg>
